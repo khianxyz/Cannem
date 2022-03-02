@@ -47,7 +47,7 @@ function openNav() {
 
 function closeNav() {
     document.getElementById("menuBar").style.width = "0";
-    $('overlay').remove()
+    $('#overlay').remove()
 }
 
 // 初始化页面，并载入必要资源
