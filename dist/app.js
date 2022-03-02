@@ -68,25 +68,6 @@ function init() {
                         </form>
                     </div>`;
 
-    // 菜单
-    var menu_bar = `
-        <div class="titleBar_item titleBar_menu">
-          <a class="titleBar_link" onclick="openNav()"><i></i></a>
-          <div class="sidenav" id="menuBar"">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>      
-            ${themeChanger}`;
-
-    names.forEach((name, idx) => {
-        menu_bar += `<a href="/${idx}:/">${name}</a>`;
-    });
-    if (ThemeConfig.menu_show) {
-        for (let i = 0; i < ThemeConfig.menus.length; i++) {
-            menu_bar += `<a href="${ThemeConfig.menus[i].url}" target="_blank">${ThemeConfig.menus[i].name}</a>`;
-        }
-    }
-    menu_bar += `
-          </div>
-        </div>`;
 
     html = `
 <div class="bimg">
@@ -104,8 +85,11 @@ function init() {
       </a>
     </div>
     <div class="titleBar_nav">
-      <div class="titleBar_nav_end">` + search_bar + menu_bar;
+      <div class="titleBar_nav_end">` + search_bar;
     html += `
+        <div class="titleBar_item titleBar_menu">
+          <a class="titleBar_link" onclick="openNav()"><i></i></a>
+        </div>
     </div>
   </dir>
 </header>`;
@@ -120,6 +104,22 @@ function init() {
 </div>
 <br><br><br><br><br></div>
 `;
+//菜单
+    html += `
+<div class="sidenav" id="menuBar"">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>      
+    ${themeChanger}`;
+
+names.forEach((name, idx) => {
+    html += `<a href="/${idx}:/">${name}</a>`;
+});
+if (ThemeConfig.menu_show) {
+    for (let i = 0; i < ThemeConfig.menus.length; i++) {
+        html += `<a href="${ThemeConfig.menus[i].url}" target="_blank">${ThemeConfig.menus[i].name}</a>`;
+    }
+}
+html += `
+  </div>`;
 
     $('body').html(html);
     $('#readme_md').hide().html('');
