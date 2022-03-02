@@ -88,3 +88,18 @@ table tbody tr:nth-of-type(even) {
     color: #FFFFFFFF;
     border-bottom: 1px solid #FFFFFFFF;
 }
+
+.sidenav{
+
+    background-color: #0D0D0D;
+}
+.sidenav a{
+    color: #777;
+}
+.sidenav a:hover{
+    color: #777;
+}
+.sidenav a:hover, .offcanvas a:focus {
+    background: #ffffff05;
+    color: rgb(199 199 199);
+}
