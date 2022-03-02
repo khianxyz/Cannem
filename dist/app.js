@@ -43,41 +43,14 @@ function swticherChange(switcherItem){
 }
 
 //引入动态菜单
-function change(divid){
-	var fdiv = document.getElementById(divid);
-	if(fdiv.style.display == "block"){
-		var dopacity = 1;
-		function lowerit(){
-			dopacity -= 0.1;
-			fdiv.style.opacity = dopacity;
-			if (dopacity <= 0){ 
-				clearInterval(intervalID)
-			}
-		}
-		var intervalID = setInterval(lowerit, 10);
-		function flowover(){
-			fdiv.style.display = "none";
-			fdiv.style.opacity = 0
-		}
-		setTimeout(flowover, 200)
-	}
-	else {
-		fdiv.style.display = "block";
-		var dopacity = 0;
-		function upperit(){
-			dopacity += 0.1;
-			fdiv.style.opacity = dopacity;
-			if (dopacity >= 1){
-				clearInterval(intervalID)
-			}
-		}
-		var intervalID = setInterval(upperit, 10);
-		function fupover(){
-			fdiv.style.opacity = 1;
-		}
-			setTimeout(fupover, 200)
-	}
-} 
+document.write(`<link href="${ThemeConfig.url}@${version}/dist/css/menubar.css" rel="stylesheet">`);
+function openNav() {
+    document.getElementById("menuBar").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("menuBar").style.width = "0";
+}
 
 // 初始化页面，并载入必要资源
 function init() {
@@ -111,17 +84,19 @@ function init() {
     // 菜单
     var menu_bar = `
         <div class="titleBar_item titleBar_menu">
-          <a class="titleBar_link" onclick="change('mbm')"><i></i></a>
-          <div class="menu_list titleBar_exhibit" id="mbm" style="display:none; opacity:0"><p>Menu</p>`;
+          <a class="titleBar_link" onclick="openNav()"><i></i></a>
+          <div class="sidenav" id="menuBar""><p>Menu</p>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>      
+    `;
+          
     names.forEach((name, idx) => {
-        menu_bar += `<a  class="menu_list_item"  href="/${idx}:/">${name}</a>`;
+        menu_bar += `<a href="/${idx}:/">${name}</a>`;
     });
     if (ThemeConfig.menu_show) {
-	for (let i = 0; i < ThemeConfig.menus.length; i++) {
-	    menu_bar += `<a class="menu_list_item" href="${ThemeConfig.menus[i].url}" target="_blank">${ThemeConfig.menus[i].name}</a>`;
-	}
+        for (let i = 0; i < ThemeConfig.menus.length; i++) {
+            menu_bar += `<a href="${ThemeConfig.menus[i].url}" target="_blank">${ThemeConfig.menus[i].name}</a>`;
+        }
     }
-
     menu_bar += `
           </div>
         </div>`;
