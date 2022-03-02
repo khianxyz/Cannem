@@ -125,14 +125,6 @@ body{
     content: "\e623";
 }
 
-.titleBar_item a:hover {
-    background-color: #EEE;
-}
-
-.titleBar_item a:hover i {
-    
-}
-
 
 .titleBar_exhibit{
     display: none;

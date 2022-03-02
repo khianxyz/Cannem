@@ -69,23 +69,12 @@ function init() {
                             <input type="text" name="q" placeholder="在当前的网盘中搜索" value="${search_text}" />
                         </form>
                     </div>`;
-    // 盘
-    var pan_bar = `
-                    <div class="titleBar_item titleBar_pan">
-                        <a class="titleBar_link panBar_link" onclick="change('pbm')"><i></i></a>
-                        <div class="menu_list titleBar_exhibit" id="pbm" style="display:none; opacity:0"><p>Netdisc Drive</p>`;
-    names.forEach((name, idx) => {
-        pan_bar += `<a  class="menu_list_item"  href="/${idx}:/">${name}</a>`;
-    });
-    pan_bar += `
-                        </div>
-                    </div>`;
 
     // 菜单
     var menu_bar = `
         <div class="titleBar_item titleBar_menu">
           <a class="titleBar_link" onclick="openNav()"><i></i></a>
-          <div class="sidenav" id="menuBar""><p>Menu</p>
+          <div class="sidenav" id="menuBar"">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>      
     `;
           
