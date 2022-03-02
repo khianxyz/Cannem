@@ -3,7 +3,7 @@
     min-height: calc(100vh);
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 5200;
     top: 0;
     right: 0;
     background-color: #111;
@@ -32,9 +32,4 @@
     font-size: 36px;
     margin-left: 50px;
     padding: 15px 15px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
 }

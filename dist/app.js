@@ -42,10 +42,12 @@ function swticherChange(switcherItem){
 document.write(`<link href="${ThemeConfig.url}@${version}/dist/css/menubar.css" rel="stylesheet">`);
 function openNav() {
     document.getElementById("menuBar").style.width = "250px";
+    $('body').append('<div class="mdui-overlay mdui-overlay-show" id="overlay" style="z-index: 5100;"></div>')
 }
 
 function closeNav() {
     document.getElementById("menuBar").style.width = "0";
+    $('overlay').remove()
 }
 
 // 初始化页面，并载入必要资源
@@ -73,7 +75,7 @@ function init() {
           <div class="sidenav" id="menuBar"">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>      
             ${themeChanger}`;
-            
+
     names.forEach((name, idx) => {
         menu_bar += `<a href="/${idx}:/">${name}</a>`;
     });
