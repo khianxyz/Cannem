@@ -18,18 +18,14 @@ document.write('<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+
 document.write('<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;1,400;1,600&amp;display=swap" rel="stylesheet">');
 //主题
 
+document.write(`<link href="${ThemeConfig.url}@${version}/dist/css/switcher.css" rel="stylesheet"></link>`)
 var darkMode = document.cookie.indexOf('darkMode=true') >= 0;
 var themeName = darkMode ? 'dark' : 'light';
 document.write(`<link id="themecss" href= "${ThemeConfig.url}@${version}/dist/css/${themeName}.css" rel="stylesheet">`);
 //等待引入变量
 
 var checkStatu = darkMode ? 'checked' : '';
-const footerhtml = ` 
-<footer>
-    <link href="${ThemeConfig.url}@${version}/dist/css/switcher.css" rel="stylesheet">
-    <label><input class="switcher switcher-anime" onchange="swticherChange(this)" type="checkbox" ${checkStatu}></label>
-</footer>
-`
+const themeChanger = `<label><input class="switcher switcher-anime" onchange="swticherChange(this)" type="checkbox" ${checkStatu}></label>`;
 function swticherChange(switcherItem){
     if (switcherItem.checked == true){
         document.cookie = "darkMode=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/";
@@ -76,8 +72,8 @@ function init() {
           <a class="titleBar_link" onclick="openNav()"><i></i></a>
           <div class="sidenav" id="menuBar"">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>      
-    `;
-          
+            ${themeChanger}`;
+            
     names.forEach((name, idx) => {
         menu_bar += `<a href="/${idx}:/">${name}</a>`;
     });
@@ -119,8 +115,6 @@ function init() {
     <div id="content" class="cannem-item"></div>
     <div id="readme_md" class="mdui-typo" style="display:none;padding: 20px 0;"></div>
   </div>
-  `
-html += footerhtml + `
 </div>
 <br><br><br><br><br></div>
 `;
