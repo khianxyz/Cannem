@@ -1,0 +1,496 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #FFF !important;
+    transition: 0.3s !important;
+}
+
+.bodydiv{
+    background: #FFF;
+    margin-top: 300px;
+    transition: 0.3s !important;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+.titleBar {
+    background-color: #ffffff;
+    box-shadow:none !important;
+    color: #333333;
+    position: relative;
+    background: linear-gradient( 90deg, rgba(247,149,51,0.1) 0, rgba(243,112,85,0.1) 15%, rgba(239,78,123,0.1) 30%, rgba(161,102,171,0.1) 44%, rgba(80,115,184,0.1) 58%, rgba(16,152,173,0.1) 72%, rgba(7,179,155,0.1) 86%, rgba(109,186,130,0.1) 100%);
+    position: fixed;
+    width: 100%;
+    backdrop-filter: saturate(180%) blur(1em);
+    z-index: 100;
+    top: 0;
+}
+
+.titleBar_container {
+    width: 95%;
+    height: 3.5rem;
+    align-items: stretch;
+    display: flex;
+    max-width: 70%;
+    flex-grow: 1;
+    margin: 0 auto;
+    position: relative;
+}
+
+.titleBar_avatar {
+    min-height: 3.5rem;
+    align-items: stretch;
+    display: flex;
+    flex-shrink: 0;
+}
+
+.titleBar_item {
+    flex-grow: 0;
+    flex-shrink: 0;
+    display: block;
+    position: relative;
+}
+
+.titleBar .titleBar_container .titleBar_avatar img {
+    width: 2rem;
+    height: 2rem;
+    border-width: 4px;
+    border-radius: 2rem;
+    border-style: solid;
+    border-color: #ebe8e844;
+    position: absolute;
+    top: 0.55rem;
+    transition: 1.2s;
+}
+
+.titleBar .titleBar_container .titleBar_avatar img:hover {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+}
+
+.titleBar_nav {
+    flex-grow: 1;
+    flex-shrink: 0;
+    align-items: stretch;
+    display: flex;
+}
+
+.titleBar_nav_end {
+    justify-content: flex-end;
+    margin-left: auto;
+    align-items: stretch;
+    display: flex;
+}
+
+.titleBar_nav_end a {
+    text-decoration: none;
+}
+
+.titleBar_nav_end .titleBar_item {
+    align-items: stretch;
+    display: flex;
+}
+
+.titleBar_link {
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    line-height: 1.5;
+    padding: .5rem .75rem;
+    position: relative;
+    transition :0.4s;
+}
+
+.titleBar_link>i {
+    color: #7e7e7e;
+    display: inline-block;
+    font-family: iconfont, Material Icons !important;
+    font-size: 1.6rem;
+    font-style: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.titleBar_link>i:before {
+    content: "\e623";
+}
+
+.titleBar_item a:hover {
+    background-color: #EEE;
+}
+
+.titleBar_item a:hover i {
+    
+}
+
+
+.titleBar_exhibit{
+    display: none;
+    z-index: 30;
+    -webkit-box-shadow: 0 3px 10px rgb(0 0 0 / 5%);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 5%);
+    border: 1px solid #EEE;
+    border-radius: 10px; 
+    position: absolute;
+    background: #FFF;
+    overflow: hidden;
+}
+
+.searchBar_form {
+    top: 100%;
+    right: 0;
+    text-align: center;
+    display: block !important;
+}
+
+.searchBar_form input {
+    transition: .2s;
+    width: 13em;
+    height: 2rem;
+    margin: 12px 20px;
+    border-radius: 30px;
+    border: none;
+    background: #ffffff7f;
+    padding: 0 15px;
+    outline: none;
+    box-shadow: 0px 2Px 10px rgb(0 0 0 / 3%);
+}
+
+.searchBar_form input:focus, .searchBar_form input:hover {
+    background: #FFF;
+}
+
+.menu_list {
+    font-size: .875rem;
+    right: 0;
+    width: 8rem;
+    top: 100%;
+}
+
+.menu_list p {
+    color: #000;
+    padding: 10px 0;
+    font-weight: bold;
+    font-size: 0.8rem;
+    text-align: center;
+    border-bottom: 1px solid #fafafa;
+}
+
+.menu_list .menu_list_item {
+    color: #333;
+    display: block;
+    text-align: center;
+    line-height: 3rem;
+    transition:0.4s;
+}
+
+.menu_list .menu_list_item:hover {
+    background-color: #EEE;
+}
+
+.bimg {
+    background:#333;
+    display: block !important;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    height: 300px;
+    top: 0;
+    z-index: -30;
+    filter: brightness(0.4) blur(4px);
+    position: fixed;
+    padding: 10px !important;
+    margin: -10px !important;
+}
+
+
+.mdui-container {
+    padding: 0;
+    max-width: 70%;
+}
+
+.mdui-container-fluid #content {
+    padding: 15px 0;
+}
+
+.mdui-img-fluid{
+    margin: auto;
+    border-radius: 10px;
+}
+.mdui-col {
+    margin-top: 18px;
+}
+
+.cannem-item {
+    padding: 5px !important;
+}
+.thumIcon-father{
+    display: flex;
+    align-items: center;
+    width:30px; 
+    height:30px; 
+    position:absolute; 
+    left: 7px;
+    top: 17px;
+    border-radius:5px; 
+    overflow:hidden;
+    background:#222;
+    opacity:0;
+    transition: .3s;
+}
+.thumbIcon{
+    max-width:100%;
+}
+
+.mdui-row, [class*=mdui-row-] {
+    margin: 0;
+}
+
+.large-title {
+    color: #FFFFFFED;
+    position: absolute;
+    top: 120px;
+    font-size: 30px;
+    font-family: 'Noto Serif SC', system-ui;
+    margin: 0 20px !important;
+    text-shadow: 0px 1px 1px #00000033;
+    font-weight: bold;
+    text-decoration: none;
+    transition: .4s;
+}
+.large-title:hover {
+    color: #FFFFFFCC;
+}
+.description {
+    position: absolute;
+    color: #FFFFFF99;
+    margin: 0 20px !important;
+    top: 165px;
+}
+
+.mdui-toolbar {
+    width: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 0px;
+    position:absolute; 
+    top: 260px;
+    width: 100%;
+    height: 40px;
+}
+.mdui-toolbar .mdui-icon {
+    color: #FFFFFF;
+}
+.mdui-toolbar::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #f5f5f522;
+}
+
+.mdui-typo-headline {
+    padding: 0;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.mdui-toolbar>a {
+    padding: 0 11px;
+    line-height: 29px;
+    transition: .4s;
+    color: #FFF;
+}
+
+.folder > div i {
+    color: #65b2ff;
+    color: #fabc37 !important;
+    margin-right: 13px;
+    font-size: 1.7em;
+}
+.folder-last{
+    color:#FFF;
+    text-shadow:1px 1px 2px #00000099;
+    padding: 0 11px !important;
+}
+
+.file > div i {
+    margin-right:13px;
+}
+
+.mdui-toolbar>* {
+    padding: 0px 3px;
+    margin: unset !important;
+    overflow: initial;
+    text-overflow: unset;
+}
+
+.mdui-select {
+    padding-right: 50px;
+    margin-right: 20px !important;
+}
+
+.mdui-select-selected {
+    right: 10px;
+}
+
+.mdui-select-menu {
+    -webkit-box-shadow: 0 0.2em 1em rgba(100, 100, 100, 0.2);
+    box-shadow: 0 0.2em 1em rgba(100, 100, 100, 0.2);
+    width: auto !important;
+}
+
+.mdui-textfield-expandable {
+    width: 30px;
+}
+
+.mdui-textfield-expandable .mdui-textfield-icon {
+    top: 4%;
+}
+
+.mdui-list {
+    padding: 0;
+}
+
+.mdui-list>.th {
+    border: none;
+}
+
+.mdui-list-item {
+    margin: 0 !important;
+    border-radius: 5px;
+    padding: 7px 0px !important;
+    border-bottom: 1px solid #eee;
+    transition: border .3s, background .1s !important;
+}
+
+.mdui-list-item:hover {
+    background-color: rgba(0,0,0,.03) !important;
+}
+
+.file-info {
+    display: none;
+}
+
+.file-title {
+    display: inline;
+}
+
+.mdui-text-color-blue-grey-500 {
+    margin-top: 20px;
+}
+
+.mdui-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.mdui-dialog {
+    border-radius: 10px;
+    -webkit-box-shadow: 0 3px 15px rgb(0 0 0 / 5%);
+    box-shadow: 0 3px 15px rgb(0 0 0 / 5%);
+}
+
+.mdui-toolbar > a:hover {
+    color: #0080ff;
+}
+
+.mdui-toolbar > a:first-child {
+    background-color: #65b2ff;
+    color: #ffff !important;
+    border: 1px solid #65b2ff;
+    border-radius: 22px;
+    padding: 0 16px;
+    margin-right: 8px !important;
+}
+
+.mdui-dialog-actions .mdui-btn , .mdui-select-menu-item[selected]{
+    color: #65b2ff;
+}
+
+#count {
+    color: #333 !important;
+}
+
+@media screen and (max-width: 1200px) {
+    .titleBar_container,
+    .mdui-container {
+        max-width: 860px;
+    }
+    .searchBar_form input {
+        margin: 12px 10px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+
+}
+
+@media screen and (max-width: 900px) {
+
+}
+
+@media screen and (max-width: 780px) {
+    .bimg{
+        height: 250px;
+    }
+    .mdui-toolbar{
+        top: 210px;
+    }
+    .large-title {
+        top: 115px;
+        text-align: center;
+        margin: 0 calc(50% - 3em) !IMPORTANT;
+        font-size: 25px;
+    }
+    .description {
+        position: absolute;
+        top: 151px;
+        font-size:0.9em;
+        margin: 0 calc(50% - 4.5EM) !important;
+    }
+   .mdui-list-item .mdui-text-right {
+        display: none
+    }
+    .bodydiv{
+        background: #FFF;
+        margin-top: 250px;
+    }    
+    .file-title {
+        display: inline-block;
+        position: absolute;
+        top: 3px;
+        line-height: 28px;
+    }
+    .file-info {
+        display: inline-block;
+        position: absolute;
+        top: 29px;
+        line-height: 17px;
+        color: #AAA;
+        FONT-SIZE: 12px;
+    }
+    .mdui-col-xs-12 {
+        float: left;
+        width: 100%;
+    }
+    
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .searchBar_form {
+        right: -14vw;
+    }
+}

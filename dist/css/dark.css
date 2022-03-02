@@ -1,0 +1,90 @@
+body, .bodydiv
+{
+   background-color: #222 !important;
+}
+.titleBar .titleBar_container .titleBar_avatar img {
+    border-color: #575757;
+}
+.titleBar_link>i {
+    color: #F0F0F0;
+}
+
+a.titleBar_link:hover {
+    background: #2222222f;
+}
+
+.titleBar_exhibit {
+    background: #222;
+    border:none;
+}
+.menu_list p {
+    color: #FFF;
+    border-bottom: 1px solid #2c2c2c;
+  
+}
+.menu_list .menu_list_item {
+    color: #F0F0F0;
+}
+
+.menu_list_item:hover {
+    background: #2D2D2D !important;
+}
+
+.cannem-item {
+  color: #F0F0F0;
+}
+
+.mdui-list-item {
+    border-bottom: 1px solid #2C2C2C;
+}
+
+#count {
+    color: #999 !IMPORTANT;
+}
+
+.mdui-typo strong {    
+    background: #6b681c;
+}
+
+.mdui-typo hr {
+    border: none;
+    border-bottom: 2px solid #2f2f2f;
+}
+
+.mdui-typo blockquote {
+    border-left: 3px solid #3c3c3c;
+    background: #333333;
+    color: #bcbcbc;
+}
+
+table tbody tr:nth-of-type(even) {
+    background-color: #1d1d1d;
+}
+
+.searchBar_form input {
+    background: #0000002f;
+    color: #F0F0F0;
+}
+.searchBar_form input:hover, .searchBar_form input:focus  {
+    background: #5555552F;
+}
+.mdui-toolbar::-webkit-scrollbar-thumb {
+    background: #2a2a2a;
+}
+.mdui-theme-accent-blue .mdui-color-theme-accent {
+    background-color: #448aff91!important;
+}
+.mdui-btn[disabled] {
+    color: #bbb !IMPORTANT;
+}
+.mdui-textfield-label {
+    color: unset;
+}
+.mdui-textfield-input {
+    color: #FFFFFF99;
+    border-bottom: 1px solid #FFFFFF99;
+}
+.mdui-textfield-input:hover {
+    color: #FFFFFFFF;
+    border-bottom: 1px solid #FFFFFFFF;
+}

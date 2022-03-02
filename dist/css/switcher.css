@@ -1,0 +1,58 @@
+label{
+    display:block;
+    vertical-align: middle;
+}
+label, input, select{
+  vertical-align: middle;
+}
+.switcher {
+  width: 52px;
+  height: 31px;
+  position: relative;
+  border: 1px solid #dfdfdf;
+  background-color: #fdfdfd;
+  box-shadow: #dfdfdf 0 0 0 0 inset;
+  border-radius: 20px;
+  background-clip: content-box;
+  display: inline-block;
+  -webkit-appearance: none;
+  user-select: none;
+  outline: none; 
+}
+.switcher:before {
+  content: '';
+  width: 29px;
+  height: 29px;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4); 
+}
+.switcher:checked {
+  border-color: orange;
+  box-shadow: orange 0 0 0 16px inset;
+  background-color: orange; 
+}
+.switcher:checked:before {
+  left: 21px; 
+}
+.switcher.switcher-anime {
+  transition: background-color ease 0.4s; 
+}
+.switcher.switcher-anime:before {
+  transition: left 0.3s; 
+}
+.switcher.switcher-anime::checked {
+  box-shadow: #dfdfdf 0 0 0 0 inset;
+  background-color: #64bd63;
+  background-color: orange;
+  transition: border-color 0.4s, background-color ease 0.4s; 
+}
+.switcher.switcher-anime:checked:before {
+  transition: left 0.3s; 
+}
+.switcher:hover{
+  cursor: pointer;
+}          
