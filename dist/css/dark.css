@@ -91,15 +91,12 @@ table tbody tr:nth-of-type(even) {
 
 .sidenav{
 
-    background-color: #0D0D0D;
+    background-color: #0D0D0D !important;
 }
 .sidenav a{
-    color: #777;
-}
-.sidenav a:hover{
-    color: #777;
+    color: #777!important;
 }
 .sidenav a:hover, .offcanvas a:focus {
-    background: #ffffff05;
-    color: rgb(199 199 199);
+    background: #ffffff05 !important;
+    color: rgb(199 199 199) !important;
 }
