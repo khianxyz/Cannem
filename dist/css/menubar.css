@@ -39,7 +39,7 @@
     margin-right: 10px;
 }
 .sidenav .closebtn:hover {
-    background: none;
+    background: none !important;
 }
 
 #overlay{

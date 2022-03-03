@@ -2,9 +2,6 @@ body, .bodydiv
 {
    background-color: #222 !important;
 }
-.titleBar{
-    background: rgba(0,0,0,0.1);
-}
 .titleBar_avatar img {
     border-color: #575757;
 }
