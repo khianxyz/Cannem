@@ -134,7 +134,7 @@ body{
 
 .searchBar_form input {
     transition: .2s;
-    width: 13em;
+    width: 12.5em;
     margin: 0px;
     height: 2rem;
     border-radius: 7px;
@@ -405,9 +405,6 @@ body{
     .titleBar_container,
     .mdui-container {
         max-width: 860px;
-    }
-    .searchBar_form input {
-        margin: 12px 10px;
     }
 }
 
