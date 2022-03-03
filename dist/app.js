@@ -40,6 +40,7 @@ function swticherChange(switcherItem){
 //引入动态菜单
 document.write(`<link href="${ThemeConfig.url}@${version}/dist/css/menubar.css" rel="stylesheet">`);
 function openNav() {
+    //$('#overlay').css('pointer-events', 'none'); 以后可以改成Jquery
     document.getElementById("menuBar").style.width = "250px";
     document.getElementById('overlay').style.background = "rgba(0, 0, 0, 0.5);";
     document.getElementById('overlay').style.pointerEvents = "auto";
