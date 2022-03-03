@@ -69,7 +69,7 @@ function init() {
 
     var title = document.title.split('-')[0];
     var description = window.description;
-    
+
     html = `
 <div class="bimg">
 </div>
@@ -107,9 +107,8 @@ function init() {
 //菜单
 html += `
 <div class="sidenav" id="menuBar"">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    ${search_bar}    
-    ${themeChanger}`;
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>  
+    ${themeChanger}${search_bar}  `;
 
 names.forEach((name, idx) => {
     html += `<a href="/${idx}:/">${name}</a>`;
