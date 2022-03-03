@@ -12,7 +12,7 @@ document.write('<script src="' + window.cdnurl + '/npm/plyr@3.6.8/dist/plyr.min.
 // markdown支持
 document.write('<script src="' + window.cdnurl + '/npm/markdown-it/dist/markdown-it.js"></script>');
 document.write('<script src="' + window.cdnurl + '/npm/markdown-it-checkbox/dist/markdown-it-checkbox.min.js"></script>');
-document.write('<style> .mdui-appbar .mdui-toolbar{height:56px;font-size:1pc;}.mdui-toolbar>i{padding:0}.mdui-toolbar>a:hover,a.active,a.mdui-typo-headline{opacity:1}.mdui-list-item{transition:none}.mdui-list>.th{background-color:initial}.mdui-list-item>a{width:100%;line-height:3pc}.mdui-list-item{margin:2px 0;padding:0}.mdui-toolbar>a:last-child{opacity:1}.mdui-container{width:100%!important;margin:0 auto}.titleBar{ box-shadow: 0 0.2em 1em rgb(204 204 204 / 30%);}</style>');
+document.write('<style> .mdui-appbar .mdui-toolbar{height:56px;font-size:1pc;}.mdui-toolbar>i{padding:0}.mdui-toolbar>a:hover,a.active,a.mdui-typo-headline{opacity:1}.mdui-list-item{transition:none}.mdui-list>.th{background-color:initial}.mdui-list-item>a{width:100%;line-height:3pc}.mdui-list-item{margin:2px 0;padding:0}.mdui-toolbar>a:last-child{opacity:1}.mdui-container{width:100%!important;margin:0 auto}</style>');
 // google font
 document.write('<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;900&amp;display=swap" rel="stylesheet">');
 document.write('<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;1,400;1,600&amp;display=swap" rel="stylesheet">');
