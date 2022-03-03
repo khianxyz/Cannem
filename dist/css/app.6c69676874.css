@@ -152,14 +152,14 @@ body{
     margin: 12px 20px;
     border-radius: 30px;
     border: none;
-    background: #ffffff7f;
+    background: rgb(0 26 41 / 4%);
     padding: 0 15px;
     outline: none;
-    box-shadow: 0px 2Px 10px rgb(0 0 0 / 3%);
+    box-shadow: 0px 2Px 10px rgb(0 0 0 / 2%);
 }
 
 .searchBar_form input:focus, .searchBar_form input:hover {
-    background: #FFF;
+    background: #00000012;
 }
 
 .menu_list {
@@ -441,15 +441,15 @@ body{
     }
     .large-title {
         top: 115px;
+        width: 100%;
         text-align: center;
-        margin: 0 calc(50% - 3em) !IMPORTANT;
-        font-size: 25px;
+        margin: unset !important;
     }
     .description {
-        position: absolute;
         top: 151px;
-        font-size:0.9em;
-        margin: 0 calc(50% - 4.5EM) !important;
+        width: 100%;
+        text-align: center;
+        margin: unset !important;
     }
    .mdui-list-item .mdui-text-right {
         display: none

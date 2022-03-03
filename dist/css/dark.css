@@ -62,11 +62,11 @@ table tbody tr:nth-of-type(even) {
 }
 
 .searchBar_form input {
-    background: #0000002f;
+    background: #FFFFFF11;
     color: #F0F0F0;
 }
 .searchBar_form input:hover, .searchBar_form input:focus  {
-    background: #5555552F;
+    background: #FFFFFF22;
 }
 .mdui-toolbar::-webkit-scrollbar-thumb {
     background: #2a2a2a;

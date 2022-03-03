@@ -63,19 +63,19 @@ function init() {
 
     // 搜索
     var search_bar = `
-                    <div class="titleBar_item search_bar">
-                        <form class="searchBar_form" method="get" action="/${cur}:search">
-                            <input type="text" name="q" placeholder="在当前的网盘中搜索" value="${search_text}" />
-                        </form>
-                    </div>`;
+                    <form class="searchBar_form" method="get" action="/${cur}:search">
+                        <input type="text" name="q" placeholder="在当前的网盘中搜索" value="${search_text}" />
+                    </form>`;
 
+    var title = document.title.split('-')[0];
+    var description = 'For you, For ever.'
 
     html = `
 <div class="bimg">
 </div>
 <div class="mdui-container">
-<a class="large-title" href="#">Khian.Res</a>
-<span class="description">For you, For ever.</span>
+<a class="large-title" href="/">${title}</a>
+<span class="description">${description}</span>
 <div id="nav" class="mdui-toolbar cannem-item nav-style"> </div>
 </div>
 <header class="titleBar">
@@ -86,8 +86,7 @@ function init() {
       </a>
     </div>
     <div class="titleBar_nav">
-      <div class="titleBar_nav_end">` + search_bar;
-    html += `
+      <div class="titleBar_nav_end">
         <div class="titleBar_item titleBar_menu">
           <a class="titleBar_link" onclick="openNav()"><i></i></a>
         </div>
@@ -108,7 +107,8 @@ function init() {
 //菜单
 html += `
 <div class="sidenav" id="menuBar"">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>      
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    ${search_bar}    
     ${themeChanger}`;
 
 names.forEach((name, idx) => {
