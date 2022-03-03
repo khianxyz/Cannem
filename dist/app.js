@@ -842,10 +842,11 @@ function file_markdown(path){
     var name = path.split('/').pop();
     var ext = name.split('.').pop().toLowerCase();
     var href = window.location.origin + path;
-    $("#content").append("<div id='mdbody' class='mdui-typo'></div>")
+    $("#content").append("<div id='mdbody' class='mdui-typo'><div class='md-stand'></div></div>")
     $.get(path, function(data) {
 	    console.log(data);
 	    markdown("#mdbody", data)
+        $('#mdbody').innerHTML
 	    updateTable();
     });
     content.innerHTML = "<h2 class='page-title'>" + decodeURI(name) + "</h2>" + content.innerHTML;
