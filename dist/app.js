@@ -68,8 +68,8 @@ function init() {
                     </form>`;
 
     var title = document.title.split('-')[0];
-    var description = 'For you, For ever.'
-
+    var description = window.description;
+    
     html = `
 <div class="bimg">
 </div>

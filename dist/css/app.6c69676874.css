@@ -444,6 +444,7 @@ body{
         width: 100%;
         text-align: center;
         margin: unset !important;
+        font-size: 25px;
     }
     .description {
         top: 151px;
