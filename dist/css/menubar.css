@@ -6,7 +6,7 @@
     z-index: 5500;
     top: 0;
     right: 0;
-    background-color: rgb(209 209 209);
+    background-color: #FFF;
     overflow-x: hidden;
     transition: 0.5s;
     white-space: nowrap;
@@ -22,8 +22,8 @@
 }
 
 .sidenav a:hover, .offcanvas a:focus{
-    background: #FFFFFF33;
-    color: rgb(70 70 70);
+    background: #00000005;
+    color: rgb(40 40 40);
 }
 
 .sidenav .closebtn {
