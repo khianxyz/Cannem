@@ -115,7 +115,8 @@ names.forEach((name, idx) => {
 });
 if (ThemeConfig.menu_show) {
     for (let i = 0; i < ThemeConfig.menus.length; i++) {
-        html += `<a href="${ThemeConfig.menus[i].url}" target="_blank"><i class="mdui-icon material-icons sidenavIcon">attachment</i>${ThemeConfig.menus[i].name}</a>`;
+        var icon = (ThemeConfig.menus[i].icon != '') ? ThemeConfig.menus[i].icon : 'attachment';
+        html += `<a href="${ThemeConfig.menus[i].url}" target="_blank"><i class="mdui-icon material-icons sidenavIcon">${icon}</i>${ThemeConfig.menus[i].name}</a>`;
     }
 }
 html += `
