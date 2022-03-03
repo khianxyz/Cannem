@@ -111,11 +111,11 @@ html += `
     ${themeChanger}${search_bar}  `;
 
 names.forEach((name, idx) => {
-    html += `<a href="/${idx}:/">${name}</a>`;
+    html += `<a href="/${idx}:/"><i class="mdui-icon material-icons sidenavIcon">storage</i>${name}</a>`;
 });
 if (ThemeConfig.menu_show) {
     for (let i = 0; i < ThemeConfig.menus.length; i++) {
-        html += `<a href="${ThemeConfig.menus[i].url}" target="_blank">${ThemeConfig.menus[i].name}</a>`;
+        html += `<a href="${ThemeConfig.menus[i].url}" target="_blank"><i class="mdui-icon material-icons sidenavIcon">attachment</i>${ThemeConfig.menus[i].name}</a>`;
     }
 }
 html += `

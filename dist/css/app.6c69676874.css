@@ -141,16 +141,16 @@ body{
 .searchBar_form {
     top: 100%;
     right: 0;
-    text-align: center;
     display: block !important;
+    padding: 16px 8px 16px 20px;
 }
 
 .searchBar_form input {
     transition: .2s;
     width: 13em;
+    margin: 0px;
     height: 2rem;
-    margin: 12px 20px;
-    border-radius: 30px;
+    border-radius: 7px;
     border: none;
     background: rgb(0 26 41 / 4%);
     padding: 0 15px;

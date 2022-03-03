@@ -35,6 +35,9 @@
     padding: 15px 15px;
 }
 
+.sidenavIcon {
+    margin-right: 10px;
+}
 .sidenav .closebtn:hover {
     background: none;
 }
