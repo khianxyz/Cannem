@@ -42,7 +42,7 @@ table td:first-of-type {
     font-size: 30px;
     text-align: center;
     font-family: 'Nunito', 'Noto Serif SC', system-ui;
-    margin: 1.4em 0 0.5em 0 !important;
+    margin: 23px auto !important;
 }
 .mdui-typo {
     padding-bottom: 15px !important;
@@ -60,7 +60,7 @@ table td:first-of-type {
 }
 h1, h2, h3, h4, h5, h6, h1 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong {
     font-weight: bold !important;
-    margin-top: 0.6em !important;
+    margin: 23px auto !important;
 }
 .mdui-typo a:after {
     font-family: iconfont, Material Icons !important;
