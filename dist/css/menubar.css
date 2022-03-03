@@ -8,7 +8,7 @@
     right: 0;
     background-color: #FFF;
     overflow-x: hidden;
-    transition: 0.5s;
+    transition: width 0.5s, background 0.3s;
     white-space: nowrap;
 }
 
