@@ -41,12 +41,15 @@ function swticherChange(switcherItem){
 document.write(`<link href="${ThemeConfig.url}@${version}/dist/css/menubar.css" rel="stylesheet">`);
 function openNav() {
     document.getElementById("menuBar").style.width = "250px";
-    $('body').append('<div class="mdui-overlay mdui-overlay-show" id="overlay" style="z-index: 5100;"></div>')
+    document.getElementById('overlay').style.background = "rgba(0, 0, 0, 0.5);";
+    document.getElementById('overlay').style.pointerEvents = "auto";
 }
 
 function closeNav() {
     document.getElementById("menuBar").style.width = "0";
-    $('#overlay').remove()
+    console.log('closenav.')
+    document.getElementById('overlay').style.background = "rgba(0, 0, 0, 0);";
+    document.getElementById('overlay').style.pointerEvents = "none";
 }
 
 // 初始化页面，并载入必要资源
@@ -118,6 +121,7 @@ if (ThemeConfig.menu_show) {
     }
 }
 html += `
+    <div onclick="closeNav()" id="overlay"></div>
   </div>`;
 
     $('body').html(html);

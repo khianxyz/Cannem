@@ -39,6 +39,16 @@
     background: none;
 }
 
+#overlay{
+    position: fixed;
+    top: -5000px;
+    right: -5000px;
+    bottom: -5000px;
+    left: -5000px;
+    z-index: 5100;
+    pointer-events: none;
+    transition: background .5s;
+}
 @media screen and (max-width: 780px) {
     .sidenav a, .sidenav label {
         font-size: 16px;
