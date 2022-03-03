@@ -846,7 +846,6 @@ function file_markdown(path){
     $.get(path, function(data) {
 	    console.log(data);
 	    markdown("#mdbody", data)
-        $('#mdbody').innerHTML
 	    updateTable();
     });
     content.innerHTML = "<h2 class='page-title'>" + decodeURI(name) + "</h2>" + content.innerHTML;
