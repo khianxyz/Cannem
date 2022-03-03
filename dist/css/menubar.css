@@ -38,3 +38,10 @@
 .sidenav .closebtn:hover {
     background: none;
 }
+
+@media screen and (max-width: 780px) {
+    .sidenav a, .sidenav label {
+        font-size: 16px;
+    }
+
+}
