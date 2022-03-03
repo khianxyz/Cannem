@@ -40,17 +40,15 @@ function swticherChange(switcherItem){
 //引入动态菜单
 document.write(`<link href="${ThemeConfig.url}@${version}/dist/css/menubar.css" rel="stylesheet">`);
 function openNav() {
-    //$('#overlay').css('pointer-events', 'none'); 以后可以改成Jquery
-    document.getElementById("menuBar").style.width = "250px";
-    document.getElementById('overlay').style.background = "rgba(0, 0, 0, 0.5);";
-    document.getElementById('overlay').style.pointerEvents = "auto";
+    $('#menuBar').css('width', '250px')
+    $('#overlay').css('background', 'rgba(0,0,0,0.5)')
+    $('#overlay').css('pointer-events', 'auto');
 }
 
 function closeNav() {
-    document.getElementById("menuBar").style.width = "0";
-    console.log('closenav.')
-    document.getElementById('overlay').style.background = "rgba(0, 0, 0, 0);";
-    document.getElementById('overlay').style.pointerEvents = "none";
+    $('#menuBar').css('width', '0')
+    $('#overlay').css('background', 'rgba(0,0,0,0)')
+    $('#overlay').css('pointer-events', 'none');
 }
 
 // 初始化页面，并载入必要资源
@@ -108,7 +106,7 @@ function init() {
 <br><br><br><br><br></div>
 `;
 //菜单
-    html += `
+html += `
 <div class="sidenav" id="menuBar"">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>      
     ${themeChanger}`;
@@ -122,8 +120,8 @@ if (ThemeConfig.menu_show) {
     }
 }
 html += `
-    <div onclick="closeNav()" id="overlay"></div>
-  </div>`;
+  </div>
+<div onclick="closeNav()" id="overlay"></div>`;
 
     $('body').html(html);
     $('#readme_md').hide().html('');
