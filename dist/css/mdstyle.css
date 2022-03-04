@@ -54,8 +54,7 @@ table td:first-of-type {
     margin: auto;
     max-width: 700px;
 }
-.mdui-typo strong {
-    font-weight: normal;
+.mdui-typo i {
     background: #FFF6BA;
 }
 h1, h2, h3, h4, h5, h6, h1 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong {
