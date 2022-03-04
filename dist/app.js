@@ -14,10 +14,10 @@ document.write('<script src="' + window.cdnurl + '/npm/markdown-it/dist/markdown
 document.write('<script src="' + window.cdnurl + '/npm/markdown-it-checkbox/dist/markdown-it-checkbox.min.js"></script>');
 document.write('<style> .mdui-appbar .mdui-toolbar{height:56px;font-size:1pc;}.mdui-toolbar>i{padding:0}.mdui-toolbar>a:hover,a.active,a.mdui-typo-headline{opacity:1}.mdui-list-item{transition:none}.mdui-list>.th{background-color:initial}.mdui-list-item>a{width:100%;line-height:3pc}.mdui-list-item{margin:2px 0;padding:0}.mdui-toolbar>a:last-child{opacity:1}.mdui-container{width:100%!important;margin:0 auto}</style>');
 // google font
-document.write('<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&display=swap" rel="stylesheet">');
+
 document.write('<link href="https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;700&display=swap" rel="stylesheet">')
 document.write('<link href="https://fonts.googleapis.com/css2?family=Ballet&display=swap" rel="stylesheet">" rel="stylesheet">');
-
+document.write('<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">')
 //主题switcher
 document.write(`<link href="${ThemeConfig.url}@${version}/dist/css/switcher.css" rel="stylesheet"></link>`)
 var darkMode = document.cookie.indexOf('darkMode=true') >= 0;
