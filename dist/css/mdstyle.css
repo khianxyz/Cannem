@@ -41,13 +41,13 @@ table td:first-of-type {
 .page-title {
     font-size: 30px;
     text-align: center;
-    font-family: system-ui;
+    font-family: 'Microsoft YaHei', system-ui;
     margin: 23px auto !important;
 }
 .mdui-typo {
     padding-bottom: 15px !important;
     line-height: 28px;
-    font-family: system-ui;
+    font-family: 'Microsoft YaHei', system-ui;
     font-size: 18px;
     line-height: 1.8;
     letter-spacing: 1px;
