@@ -47,7 +47,7 @@ table td:first-of-type {
 .mdui-typo {
     padding-bottom: 15px !important;
     line-height: 28px;
-    font-family: 'Ballet', 'Scheherazade New', 'Noto Serif JP', sans-serif, system-ui;
+    font-family: 'Ballet', 'Scheherazade New', 'Noto Sans SC', sans-serif, system-ui;
     font-size: 18px;
     line-height: 1.8;
     letter-spacing: 1px;
