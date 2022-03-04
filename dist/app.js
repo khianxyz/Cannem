@@ -16,7 +16,7 @@ document.write('<style> .mdui-appbar .mdui-toolbar{height:56px;font-size:1pc;}.m
 // google font
 document.write('<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&display=swap" rel="stylesheet">');
 document.write('<link href="https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;700&display=swap" rel="stylesheet">')
-document.write('<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;1,400;1,600&amp;display=swap" rel="stylesheet">');
+document.write('<link href="https://fonts.googleapis.com/css2?family=Ballet&display=swap" rel="stylesheet">" rel="stylesheet">');
 
 //主题switcher
 document.write(`<link href="${ThemeConfig.url}@${version}/dist/css/switcher.css" rel="stylesheet"></link>`)
