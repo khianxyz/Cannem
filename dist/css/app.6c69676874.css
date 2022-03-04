@@ -427,6 +427,7 @@ body{
     }
     .mdui-toolbar > a:first-child {
         margin-right: 5px !important;
+        padding: 0 13px !important;
     }
     .large-title {
         top: 110px;
